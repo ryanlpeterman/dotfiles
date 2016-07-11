@@ -6,6 +6,7 @@ and remember how to recreate my favorite setups.
 
 #####[zsh](https://github.com/robbyrussell/oh-my-zsh)
 * For improved autocompletion, spell correction, performance, and appearance
+* Set-up handled by [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh)
 
 #####[autojump](https://github.com/wting/autojump)
 * To simplify file browsing common locations
