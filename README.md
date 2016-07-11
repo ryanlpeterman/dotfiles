@@ -1,12 +1,13 @@
-# Setup
-Notes for myself. Also so I can access my setup on different computers.
+## What is this?
+Notes for myself about my current workflow so I can access my setup on different computers
+and remember how to recreate my favorite setups.
 
 ## Terminal
 
-1. [zsh](https://github.com/robbyrussell/oh-my-zsh)
+#####[zsh](https://github.com/robbyrussell/oh-my-zsh)
 * For improved autocompletion, spell correction, performance, and appearance
 
-2. [autojump](https://github.com/wting/autojump)
+#####[autojump](https://github.com/wting/autojump)
 * To simplify file browsing common locations
 * Instead of spamming cd/ls -> j dest switches directory in one command
 * Requires directory to have been visited before for autojump to track it
@@ -15,16 +16,17 @@ Notes for myself. Also so I can access my setup on different computers.
 source /usr/share/autojump/autojump.sh
 ```
 
-3. [tmux](https://github.com/tmux/tmux)
+#####[tmux](https://github.com/tmux/tmux)
 * To open multiple terminal sessions in the same window
 * Works together well with vim
 
 ## Editor
-1. [Vim](https://github.com/vim/vim)
-* For fast text editing, customizability, and ubiquity
-* Copy of current minimal vimrc included in this repo with explanations
 
-2. [Sublime](https://www.sublimetext.com/)
+#####[Vim](https://github.com/vim/vim)
+* For fast text editing, customizability, and ubiquity
+* [Current vimrc with explanations](https://github.com/RyanLPeterman/workflow/blob/master/.vimrc)
+
+#####[Sublime](https://www.sublimetext.com/)
 * Slowly being phased out as I memorize vim key bindings
 * Current settings are as follows:
 
