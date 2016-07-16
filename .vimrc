@@ -24,6 +24,13 @@ filetype plugin indent on    " required
 colorscheme elflord " Set colorscheme 
 syntax enable       " Set syntax highlighting
 
+" Remove trailing whitespace on save for python
+autocmd BufWritePre *.py :%s/\s\+$//e 
+
+" Highlight characters past 80 characters in one line limit 
+highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+match OverLength /\%81v.\+/
+
 " UI Config
 set relativenumber  " Set relative line numbering
 set number          " Set absolute line numbering on current line
