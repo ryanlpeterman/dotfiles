@@ -14,17 +14,14 @@ and remember how to recreate my favorite setups.
 * Requires directory to have been visited before for autojump to track it
 * Requires following command in .zshrc
 ```sh
-source /usr/share/autojump/autojump.sh
+$ source /usr/share/autojump/autojump.sh
 ```
-
-#####[tmux](https://github.com/tmux/tmux)
-* To open multiple terminal sessions in the same window
-* Works together well with vim
-
 ## Editor
 
-#####[Vim](https://github.com/vim/vim)
+#####[neovim](https://github.com/neovim/neovim)
 * For fast text editing, customizability, and ubiquity
+* Using instead of vim due to asynchronous execution and terminal emulator
+* Easy to copy & paste between panes compared to tmux
 * [Current vimrc with explanations](https://github.com/RyanLPeterman/workflow/blob/master/.vimrc)
 
 #####[Sublime](https://www.sublimetext.com/)

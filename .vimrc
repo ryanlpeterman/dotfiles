@@ -1,4 +1,12 @@
-" Plugins using vim-plug
+" Neovim specific config
+if has ('nvim')
+    " Add <C-\><C-n> to be able to switch from terminal panes easily
+    tnoremap <C-w>h <C-\><C-n><C-w>h
+    tnoremap <C-w>j <C-\><C-n><C-w>j
+    tnoremap <C-w>k <C-\><C-n><C-w>k
+    tnoremap <C-w>l <C-\><C-n><C-w>l
+endif
+"Plugins using vim-plug
 " Install with :PlugInstall
 " TODO: replace vim-plug with Vundle 
 call plug#begin('~/.vim/plugged')
@@ -24,10 +32,9 @@ filetype plugin indent on    " required
 colorscheme elflord " Set colorscheme 
 syntax enable       " Set syntax highlighting
 
-" Remove trailing whitespace on save for python
+" Remove trailing whitespace on save
 autocmd BufWritePre *.py :%s/\s\+$//e 
 
-" Highlight characters past 80 characters in one line limit 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
