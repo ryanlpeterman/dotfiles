@@ -6,9 +6,10 @@ if has ('nvim')
     tnoremap <C-w>k <C-\><C-n><C-w>k
     tnoremap <C-w>l <C-\><C-n><C-w>l
 endif
+
 "Plugins using vim-plug
 " Install with :PlugInstall
-" TODO: replace vim-plug with Vundle 
+" TODO: replace vim-plug with Vundle
 call plug#begin('~/.vim/plugged')
 Plug 'Valloric/YouCompleteMe' "Code autocompletion
 Plug 'junegunn/goyo.vim'      "For distraction free mode
@@ -23,17 +24,17 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin('~/.vim/plugged') " path to store packages
 
 Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
-Plugin 'flazz/vim-colorschemes' " All color schemes repo 
+Plugin 'flazz/vim-colorschemes' " All color schemes repo
 
 call vundle#end()            " required
 filetype plugin indent on    " required
 
 " My Settings
-colorscheme elflord " Set colorscheme 
+colorscheme elflord " Set colorscheme
 syntax enable       " Set syntax highlighting
 
 " Remove trailing whitespace on save
-autocmd BufWritePre *.py :%s/\s\+$//e 
+autocmd BufWritePre *.py :%s/\s\+$//e
 
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/

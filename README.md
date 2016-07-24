@@ -16,6 +16,11 @@ and remember how to recreate my favorite setups.
 ```sh
 $ source /usr/share/autojump/autojump.sh
 ```
+
+#####[tmux](https://github.com/tmux/tmux)
+* To open multiple terminal sessions in the same window
+* Works together well with vim/nvim
+
 ## Editor
 
 #####[neovim](https://github.com/neovim/neovim)
