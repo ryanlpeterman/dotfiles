@@ -1,6 +1,7 @@
 ## What is this?
-Notes for myself about my current workflow so I can access my setup on different computers
-and remember how to recreate my favorite setups.
+This is a set of dotfiles that set up an entire workstation from scratch. 
+In designing these dotfiles, I tried to focus on readability and simplicity.
+Here is a writeup on the tools I have included and why:
 
 ## Terminal
 
