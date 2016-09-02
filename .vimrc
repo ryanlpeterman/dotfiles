@@ -7,27 +7,20 @@ if has ('nvim')
     tnoremap <C-w>l <C-\><C-n><C-w>l
 endif
 
-"Plugins using vim-plug
+" Auto install vim plugged and plugins
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall | source $MYVIMRC
+endif
+
+" Plugins using vim-plug
 " Install with :PlugInstall
-" TODO: replace vim-plug with Vundle
 call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe' "Code autocompletion
-Plug 'junegunn/goyo.vim'      "For distraction free mode
+Plug 'Valloric/YouCompleteMe' " Code autocompletion
+Plug 'junegunn/goyo.vim'      " For distraction free mode
+Plug 'flazz/vim-colorschemes' " All color schemes repo
 call plug#end()
-
-"" Vundle Plugins (Install with :PluginInstall)
-set nocompatible              " be iMproved, required
-filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin('~/.vim/plugged') " path to store packages
-
-Plugin 'VundleVim/Vundle.vim'   " let Vundle manage Vundle, required
-Plugin 'flazz/vim-colorschemes' " All color schemes repo
-
-call vundle#end()            " required
-filetype plugin indent on    " required
 
 " My Settings
 colorscheme elflord " Set colorscheme
@@ -36,6 +29,7 @@ syntax enable       " Set syntax highlighting
 " Remove trailing whitespace on save
 autocmd BufWritePre *.py :%s/\s\+$//e
 
+" highlight text in lines that are over 80 characters
 highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 match OverLength /\%81v.\+/
 
