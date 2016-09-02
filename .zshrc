@@ -1,7 +1,11 @@
 # Path to your oh-my-zsh installation.
-  export ZSH=/home/ryanlpeterman/.oh-my-zsh
+export ZSH=/home/ryanlpeterman/.oh-my-zsh
 
+# For autojump to work
 source /usr/share/autojump/autojump.sh
+
+# Initializes shell to make utop available
+. ~/.opam/opam-init/init.sh > /dev/null 2> /dev/null || true
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
