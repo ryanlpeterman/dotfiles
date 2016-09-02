@@ -1,6 +1,15 @@
 ## What is this?
 This is a set of dotfiles that set up an entire workstation from scratch. 
 In designing these dotfiles, I tried to focus on readability and simplicity.
+
+## Usage
+On a fresh install of 16.04, run the following commands:
+```
+wget https://raw.githubusercontent.com/RyanLPeterman/dotfiles/master/setup_ubuntu.sh
+./setup_ubuntu.sh
+
+```
+
 Here is a writeup on the tools I have included and why:
 
 ## Terminal
