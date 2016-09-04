@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# any command after that exit with error will cause script to exit
+set -e 
+
 mkdir ~/Code
 cd ~/Code
 
