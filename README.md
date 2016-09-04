@@ -6,8 +6,8 @@ In designing these dotfiles, I tried to focus on readability and simplicity.
 On a fresh install of 16.04, run the following commands:
 ```
 wget https://raw.githubusercontent.com/RyanLPeterman/dotfiles/master/setup_ubuntu.sh
+chmod u+x setup_ubuntu.sh
 ./setup_ubuntu.sh
-
 ```
 
 Here is a writeup on the tools I have included and why:

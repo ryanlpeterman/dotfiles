@@ -36,6 +36,7 @@ sudo apt-get -y autoremove
 # Command line tools
 sudo apt-get -y install vim 
 ln -s -f ~/Code/dotfiles/.vimrc ~/.vimrc
+vim +PlugInstall +qall
 sudo apt-get -y install tmux
 sudo apt-get -y install autojump
 sudo apt-get -y install node
