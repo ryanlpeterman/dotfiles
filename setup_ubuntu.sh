@@ -75,7 +75,7 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font "Roboto 11"
 # Zsh
 sudo apt-get -y install zsh
 sudo apt-get -y install git-core
-ln -s -f ~/Code/dotfiles/.zshrc ~/.zshrc
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+ln -s -f ~/Code/dotfiles/.zshrc ~/.zshrc
 chsh -s `which zsh`
 echo "Setup complete! zsh will be available on restart."
