@@ -45,6 +45,7 @@ sudo apt-get -y install shutter
 
 # Python tools
 sudo apt-get -y install pylint
+ln -s -f ~/Code/dotfiles/.pylintrc ~/.pylintrc
 sudo apt-get -y install python-pip
 sudo pip install numpy
 
