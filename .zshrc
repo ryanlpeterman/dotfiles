@@ -1,5 +1,5 @@
 # Path to your oh-my-zsh installation.
-export ZSH=/home/ryanlpeterman/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # For autojump to work
 source /usr/share/autojump/autojump.sh
