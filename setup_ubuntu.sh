@@ -39,7 +39,8 @@ ln -s -f ~/Code/dotfiles/.vimrc ~/.vimrc
 vim +PlugInstall +qall
 sudo apt-get -y install tmux
 sudo apt-get -y install autojump
-sudo apt-get -y install node
+sudo apt-get -y install nodejs
+sudo apt-get -y install npm
 sudo apt-get -y install shutter
 
 # Python tools
