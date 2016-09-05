@@ -51,9 +51,10 @@ sudo pip install numpy
 # OCaml tools
 sudo apt-get -y install ocaml
 sudo apt-get -y install opam
-sudo opam -y init
-sudo opam -y depext conf-m4.1
-sudo opam -y install utop 
+opam init -y
+opam install -y depext
+opam depext -y conf-m4.1
+opam install -y utop 
 
 # Java
 sudo apt-get -y install default-jre
@@ -68,12 +69,12 @@ gsettings set org.gnome.desktop.interface document-font-name "Roboto 10"
 gsettings set org.gnome.desktop.interface font-name "Roboto 10"
 gsettings set org.gnome.desktop.interface monospace-font-name "Inconsolata 12"
 gsettings set org.gnome.nautilus.desktop font "Roboto 10"
+gsettings set org.gnome.desktop.wm.preferences titlebar-font "Roboto 11"
 
 # Zsh
 sudo apt-get -y install zsh
 sudo apt-get -y install git-core
-wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 ln -s -f ~/Code/dotfiles/.zshrc ~/.zshrc
+wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
 chsh -s `which zsh`
 echo "Setup complete! zsh will be available on restart."
-
