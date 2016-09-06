@@ -35,6 +35,7 @@ sudo apt-get -y autoremove
 
 # Command line tools
 sudo apt-get -y install vim 
+sudo apt-get -y install build-essential cmake # for YCM
 ln -s -f ~/Code/dotfiles/.vimrc ~/.vimrc
 vim +PlugInstall +qall
 sudo apt-get -y install tmux
