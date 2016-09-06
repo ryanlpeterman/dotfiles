@@ -23,6 +23,8 @@ git config --global merge.stat true
 # use global .gitignore for all projects
 ln -s ~/Code/dotfiles/.gitignore ~/.gitignore
 git config --global core.excludesfile '~/.gitignore'
+# set vim as default editor
+git config --global core.editor "vim"
 
 # For paper theme
 sudo add-apt-repository -y ppa:snwh/pulp 
