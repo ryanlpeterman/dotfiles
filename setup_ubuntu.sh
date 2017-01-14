@@ -47,6 +47,7 @@ sudo apt-get -y install npm
 sudo apt-get -y install shutter
 
 # Python tools
+sudo apt-get -y install python-dev
 sudo apt-get -y install pylint
 ln -s -f ~/Code/dotfiles/.pylintrc ~/.pylintrc
 sudo apt-get -y install python-pip
