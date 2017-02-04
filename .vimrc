@@ -1,26 +1,17 @@
-" Neovim specific config
-if has ('nvim')
-    " Add <C-\><C-n> to be able to switch from terminal panes easily
-    tnoremap <C-w>h <C-\><C-n><C-w>h
-    tnoremap <C-w>j <C-\><C-n><C-w>j
-    tnoremap <C-w>k <C-\><C-n><C-w>k
-    tnoremap <C-w>l <C-\><C-n><C-w>l
-endif
-
-" Auto install vim plugged and plugins
-if empty(glob('~/.vim/autoload/plug.vim'))
-  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
-
-" Plugins using vim-plug
-" Install with :PlugInstall
-call plug#begin('~/.vim/plugged')
-Plug 'Valloric/YouCompleteMe' " Code autocompletion
-Plug 'junegunn/goyo.vim'      " For distraction free mode
-Plug 'flazz/vim-colorschemes' " All color schemes repo
-call plug#end()
+"" Auto install vim plugged and plugins
+"if empty(glob('~/.vim/autoload/plug.vim'))
+"  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+"    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+"  autocmd VimEnter * PlugInstall | source $MYVIMRC
+"endif
+"
+"" Plugins using vim-plug
+"" Install with :PlugInstall
+"call plug#begin('~/.vim/plugged')
+"Plug 'Valloric/YouCompleteMe' " Code autocompletion
+"Plug 'junegunn/goyo.vim'      " For distraction free mode
+"Plug 'flazz/vim-colorschemes' " All color schemes repo
+"call plug#end()
 
 " My Settings
 colorscheme elflord " Set colorscheme
@@ -30,8 +21,8 @@ syntax enable       " Set syntax highlighting
 autocmd BufWritePre *.py :%s/\s\+$//e
 
 " highlight text in lines that are over 80 characters
-highlight OverLength ctermbg=red ctermfg=white guibg=#592929
-match OverLength /\%81v.\+/
+" highlight OverLength ctermbg=red ctermfg=white guibg=#592929
+" match OverLength /\%81v.\+/
 
 " UI Config
 set relativenumber  " Set relative line numbering
