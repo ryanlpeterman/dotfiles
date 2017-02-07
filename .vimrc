@@ -20,6 +20,9 @@ syntax enable       " Set syntax highlighting
 " Remove trailing whitespace on save
 autocmd BufWritePre *.py :%s/\s\+$//e
 
+" Set copy/paste to system clipboard
+set clipboard=unnamedplus
+
 " highlight text in lines that are over 80 characters
 " highlight OverLength ctermbg=red ctermfg=white guibg=#592929
 " match OverLength /\%81v.\+/
