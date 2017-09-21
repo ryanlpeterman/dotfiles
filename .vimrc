@@ -1,18 +1,3 @@
-"" Auto install vim plugged and plugins
-"if empty(glob('~/.vim/autoload/plug.vim'))
-"  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
-"    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-"  autocmd VimEnter * PlugInstall | source $MYVIMRC
-"endif
-"
-"" Plugins using vim-plug
-"" Install with :PlugInstall
-"call plug#begin('~/.vim/plugged')
-"Plug 'Valloric/YouCompleteMe' " Code autocompletion
-"Plug 'junegunn/goyo.vim'      " For distraction free mode
-"Plug 'flazz/vim-colorschemes' " All color schemes repo
-"call plug#end()
-
 " My Settings
 colorscheme elflord " Set colorscheme
 syntax enable       " Set syntax highlighting

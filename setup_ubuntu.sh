@@ -38,7 +38,6 @@ sudo apt-get -y autoremove
 # Command line tools
 sudo apt-get -y install vim 
 ln -s -f ~/Code/dotfiles/.vimrc ~/.vimrc
-vim +PlugInstall +qall
 sudo apt-get -y install tmux	 # terminal multiplexer
 sudo apt-get -y install autojump # enhanced file navigation tool
 sudo apt-get -y install shutter  # snipping/screen capture tool
@@ -59,6 +58,8 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font "Roboto 11"
 sudo apt-get -y install zsh
 sudo apt-get -y install git-core
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
+
+echo "source /usr/share/autojump/autojump.sh" >> ~/.zshrc
 
 # Green text
 echo "$(tput setaf 2)Setup complete!!"
