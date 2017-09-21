@@ -37,32 +37,11 @@ sudo apt-get -y autoremove
 
 # Command line tools
 sudo apt-get -y install vim 
-sudo apt-get -y install build-essential cmake # for YCM
 ln -s -f ~/Code/dotfiles/.vimrc ~/.vimrc
 vim +PlugInstall +qall
-sudo apt-get -y install tmux
-sudo apt-get -y install autojump
-sudo apt-get -y install nodejs
-sudo apt-get -y install npm
-sudo apt-get -y install shutter
-
-# Python tools
-sudo apt-get -y install python-dev
-sudo apt-get -y install pylint
-ln -s -f ~/Code/dotfiles/.pylintrc ~/.pylintrc
-sudo apt-get -y install python-pip
-sudo pip install numpy
-
-# OCaml tools
-sudo apt-get -y install ocaml
-sudo apt-get -y install opam
-opam init -y
-opam install -y depext
-opam depext -y conf-m4.1
-opam install -y utop 
-
-# Java
-sudo apt-get -y install default-jre
+sudo apt-get -y install tmux	 # terminal multiplexer
+sudo apt-get -y install autojump # enhanced file navigation tool
+sudo apt-get -y install shutter  # snipping/screen capture tool
 
 # Appearance
 sudo apt-get -y install paper-gtk-theme
@@ -80,7 +59,6 @@ gsettings set org.gnome.desktop.wm.preferences titlebar-font "Roboto 11"
 sudo apt-get -y install zsh
 sudo apt-get -y install git-core
 wget https://github.com/robbyrussell/oh-my-zsh/raw/master/tools/install.sh -O - | zsh
-ln -s -f ~/Code/dotfiles/.zshrc ~/.zshrc
 
 # Green text
 echo "$(tput setaf 2)Setup complete!!"
